@@ -1,0 +1,17 @@
+<ion-view view-title="Settings">
+  <ion-content class="content padding has-header">
+    <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Number of choices
+        </div>
+        <select ng-model="settings.choices">
+          <option>2</option>
+          <option selected>3</option>
+          <option>4</option>
+        </select>
+      </label>
+      <ion-toggle ng-model="settings.l2r" toggle-class="toggle-calm">Left to Right</ion-toggle>
+    </div>
+  </ion-content>
+</ion-view>

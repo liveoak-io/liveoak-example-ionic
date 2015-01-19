@@ -1,0 +1,14 @@
+/* Empty. Add your own CSS if you like */
+
+#io-question {
+    text-align: center
+}
+
+progress[value]::-webkit-progress-value {
+}
+
+progress::-webkit-progress-bar {
+    background: none;
+}
+progress::-webkit-progress-value {
+}

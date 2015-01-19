@@ -1,0 +1,25 @@
+<ion-view view-title="Quiz">
+  <ion-content class="content padding has-header">
+    <button class="button button-block button-positive button-large ion-play"
+            ng-click="quizStart()" ng-hide="quizRunning">
+      Start Quiz
+    </button>
+    <div  ng-show="quizRunning">
+      <div class="card" id="io-question">
+        <div class="item positive">
+          <h1>{{question}}</h1>
+        </div>
+      </div>
+      <button class="button button-block" ng-repeat="choice in choices" ng-click="choose($index)"
+              ng-class="{'button-assertive': attempts[$index], 'button-positive': !attempts[$index]}">
+        {{choice}}
+      </button>
+      <progress max="1" value="{{progress}}" class="balanced-border"> </progress>
+
+        <button class="button button-block button-assertive ion-stop" ng-click="quizStop()">
+          Stop Quiz
+        </button>
+
+    </div>
+  </ion-content>
+</ion-view>
