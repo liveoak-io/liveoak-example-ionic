@@ -8,7 +8,7 @@ Installing the application
 
 * Install [Ionic](http://ionicframework.com/getting-started/) and its prerequisites.
 
-* Edit the [index.html](blob/master/www/index.html#L15) and [services.js](blob/master/www/js/services.js#L4) to use your
+* Edit the [index.html](www/index.html#L15) and [services.js](www/js/services.js#L4) to use your
 current IP address.
 
 Setup the application
