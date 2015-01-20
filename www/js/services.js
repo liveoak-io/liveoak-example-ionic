@@ -77,7 +77,7 @@ angular.module('starter.services', [])
 
           vocabulary = data.members;
 
-          if (choiceCount > vocabulary.length){
+          if (!vocabulary || !vocabulary.length || choiceCount > vocabulary.length){
             throw 'Vocabulary too small.';
           }
 

@@ -5,10 +5,15 @@ angular.module('starter.controllers', [])
     $scope.quizStart = function(){
       $scope.progress = 0;
 
-      Player.startQuiz(Settings.choices).then(function(){
-        if (Player.hasQuestion()){
-          nextQuestion('Sorry!','Vocabulary is not big enough.');
+      Player.startQuiz(Settings.choices).then(function () {
+        if (Player.hasQuestion()) {
+          nextQuestion('Sorry!', 'Vocabulary is not big enough.');
         }
+      }, function() {
+        $ionicPopup.alert({
+          title: 'Unable to start quiz',
+          template: 'Vocabulary too small, please add more words.'
+        });
       });
     };
 
