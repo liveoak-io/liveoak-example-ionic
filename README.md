@@ -8,16 +8,16 @@ Installing the application
 
 * Install [Ionic](http://ionicframework.com/getting-started/) and its prerequisites.
 
-* Edit the [index.html](www/index.html#L15) and [services.js](www/js/services.js#L4) to use your
+* Edit liveoak-example-ionic application files [index.html](www/index.html#L15) and [services.js](www/js/services.js#L4) to use your
 current IP address.
 
 Setup the application
 ---------------------
-* Add a collection for newly created application (Manual step currently required)
+* Add a collection for newly created application (Manual step currently required). Please note, that names are case-sensitive and following names are all lowercase:
 
   * Login to [LiveOak Console](http://localhost:8080/admin)
   * Create new (basic type) application called "ionic"
-  * Create new collection called "Quiz" in its 
+  * Create new collection called "quiz" in its 
   [storage](http://localhost:8080/admin#/applications/ionic/storage/storage/browse)
   * To pre-populate data, import preferred (japanese hiragana or portuguese) lesson from the "lessons" folder. The
   import option is located in the dropdown menu on the right side of (yet still empty) data table (Next to the "Add column"
@@ -26,6 +26,7 @@ Setup the application
 
 Running the application
 -----------------------
+If you're not familiar with the ionic framework, please go through its [getting started](http://ionicframework.com/getting-started/) or [documentation](http://ionicframework.com/docs/). You need to add relevant platforms and/or install emulators. Everything you need to know is in the ionic documentation.
 
 * Start your application the same way you would start any ionic application, i.e. after adding android platform and
 connecting your smart-phone through USB:
